@@ -1,0 +1,10 @@
+let arraynumber = [4, 2, 8, 15, 10];
+let max = arraynumber[0];
+
+for (let i = 1; i < arraynumber.length; i++) {
+  if (arraynumber[i] > max) {
+    max = arraynumber[i];
+  }
+}
+
+console.log("بزرگ‌ترین عدد:", max);
