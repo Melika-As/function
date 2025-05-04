@@ -1,0 +1,15 @@
+function mergeObjects(obj1, obj2) {
+  for (let key in obj2) {
+    if (obj2.hasOwnProperty(key)) {
+      obj1[key] = obj2[key];
+    }
+  }
+  return obj1;
+}
+
+
+let defaultSettings = { theme: "light", fontSize: 14 };
+let userSettings = { fontSize: 16, language: "fa" };
+
+console.log("تنظیمات :", mergeObjects(defaultSettings, userSettings));
+

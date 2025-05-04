@@ -1,0 +1,14 @@
+function invertObject(obj) {
+  let inverted = {};
+  for (let key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      inverted[obj[key]] = key;
+    }
+  }
+  return inverted;
+}
+
+
+let languageMap = { js: "JavaScript", py: "Python", rb: "Ruby" };
+console.log("آبجکت جابجا شده:", invertObject(languageMap));
+

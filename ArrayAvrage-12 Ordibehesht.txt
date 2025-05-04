@@ -1,0 +1,12 @@
+function averageArray(arraynum) {
+  if (arraynum.length === 0) return 0;
+  let sum = 0;
+  for (let num of arraynum) {
+    sum += num;
+  }
+  return sum / arraynum.length;
+}
+
+
+let scores = [15, 17, 20, 18, 19];
+console.log("میانگین نمرات:", averageArray(scores));
